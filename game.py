@@ -22,7 +22,7 @@ class Game:
         self.bullet = pygame.image.load('images/bullet.png').convert_alpha()
         self.bullet = pygame.transform.scale(self.bullet, (15, 15))
         self.bullet = pygame.transform.rotate(self.bullet, 270)
-        self.asteroid = pygame.image.load('images/poo.png').convert_alpha()
+        self.asteroid = pygame.image.load('images/asteroid.png').convert_alpha()
         self.asteroid = pygame.transform.scale(self.asteroid, (50, 50))
 
         # initialize positions
