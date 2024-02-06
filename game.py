@@ -130,7 +130,7 @@ class Game:
             if self.player_pos.x < self.screen.get_width() - self.player.get_width():
                 self.player_pos.x += 400 * self.dt
 
-        # Move and draw bullets
+        # Move and draw bullets``
         for bullet_pos in self.bullets:
             bullet_pos.y -= 600 * self.dt
             self.screen.blit(self.bullet, bullet_pos)
