@@ -156,7 +156,7 @@ class Game:
             self.background2_pos.y = -self.screen.get_height()
 
         if not self.paused:
-            if random.random() < 0.005:  # Adjust the probability to control the frequency of asteroid spawns
+            if random.random() < 0.007:  # Adjust the probability to control the frequency of asteroid spawns
                 asteroid_pos = pygame.Vector2(random.randint(0, self.screen.get_width() - self.asteroid.get_width()), -self.asteroid.get_height())
                 asteroid_speed = self.background_speed * self.dt * 5 # Spawn asteroids with a speed proportional to the background speed
 
